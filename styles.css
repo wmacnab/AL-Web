@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+#custom-p {
+  line-height: 1.0;
+}
+
+/* Navbar styling */
+
+.navbar .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #555; /* Text color for links in the navbar */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #96e7ff; /* Text color on hover for links in the navbar */
+}
+
+.wrapper {
+  background-image: url('bubbles-background.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  /*background-color: #bbe2f1;  Replace with your preferred shade of blue */
+}
+
+.container {
+  /* Add any additional styling for your container if needed */
+  background-color: #ffffff;
+}
+
+

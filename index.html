@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Access Laundry</title>
+  <link rel="icon" type="image/x-icon" href="tablogo.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      console.log('Document is ready.');
+      $(".navbar a, .wrapper a").on('click', function(event) {
+        console.log('Link clicked.');
+        // ... rest of your code ...
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links inside the navbar
+      $(".navbar a, .wrapper a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+  
+          var hash = this.hash;
+  
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="logo.svg" width="200" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#washers">Washers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#amenities">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  
+  <!-- Main Content -->
+
+    <div class="container mt-0 pt-0">
+    <!--<div class="container mt-4 pr-0 pl-0">-->
+
+
+      <!--Left padding-->
+      <div class="col"></div>
+
+
+      <!-- Heading Image Section -->
+      <section id="">
+        <div class="row">
+          <div class="col pl-0 pr-0">
+            <img src="heading.png" alt="Laundromat Image" class="img-fluid">
+          </div>
+        </div>
+      </section>
+
+      <!-- Hours Section -->
+      <section id="">
+        
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <div class="row mt-0 mb-0 mr-0 ml-0">
+              <div class="col-4">
+                <img src="clock.png" alt="Laundromat Image" class="img-fluid">
+              </div>
+              <div class="col-4">
+                <p id="custom-p"><b>Monday:<br>Tuesday:<br>Wednesday:<br>Thursday:<br>Friday:<br>Saturday:<br>Sunday:<br></b></p>
+              </div>
+              <div class="col-4">
+                <p id="custom-p">24 hours<br>24 hours<br>24 hours<br>24 hours<br>24 hours<br>24 hours<br>24 hours</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="row mt-0 mb-0 mr-0 ml-0">
+              <div class="col-4">
+                <img src="sign.png" alt="Laundromat Image" class="img-fluid">
+              </div>
+              <div class="col-8 align-self-center">
+                <p id="custom-p"><b>7875 Roswell Rd, Suite I<br>Sandy Springs, GA 30350</b></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about">
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <h2>About Us</h2>
+            <p>
+              Discover a laundry experience like no other at Access Laundry. Our laundromat offers state-of-the-art facilities, ensuring your clothes receive optimal care with top-notch washing and drying equipment. Open 24/7, we prioritize your convenience, making it easy to tackle your laundry chores at any time. Our professional and friendly staff is dedicated to assisting you throughout your visit, providing guidance and ensuring a pleasant environment. With transparent and competitive pricing, a clean and comfortable atmosphere, and a commitment to customer satisfaction, Access Laundry is the ideal choice for a hassle-free and enjoyable laundry experience.
+              </p>
+          </div>
+          <div class="col-md-6">
+            <img src="washers.png" alt="Laundromat Image" class="img-fluid">
+          </div>
+        </div>
+      </section>
+
+      <!-- Washers and Dryers Section -->
+      <section id="washers">
+        <div class="row pt-3">
+          <div class="col-md-6">
+            <img src="dryers.png" alt="Laundromat Image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2>Our Washers and Dryers</h2>
+            <p>
+              Elevate your laundry routine with Access Laundry's premium washing machines and dryers. Our cutting-edge equipment is designed to handle a variety of loads, ensuring your clothes receive the care they deserve. Experience efficiency and reliability with our 24-hour availability, allowing you to do your laundry on your schedule. Our state-of-the-art machines offer advanced features, delivering exceptional cleaning and drying results. From large-capacity washers to efficient dryers, Access Laundry provides the perfect solution for achieving laundry excellence in a convenient, modern, and customer-friendly environment.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Amenities Section -->
+      <section id="amenities">
+        <div class="row pt-3">
+          <div class="col-md-6">
+            <h2>Amenities</h2>
+            <p>
+              Access Laundry offers a comfortable and inviting atmosphere with a dedicated seating area, allowing you to relax while your laundry is in progress. Quench your thirst and satisfy your snack cravings with our conveniently located snack and drink machines. For added convenience, our change machine seamlessly transforms bills into quarters, ensuring you have the right currency for our coin-operated machines. Experience a pleasant environment year-round with our effective heating and air conditioning systems. At Access Laundry, we go beyond just laundry services, providing a range of amenities to enhance your overall laundromat experience.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="amenities.png" alt="Laundromat Image" class="img-fluid">
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <h1 class="pt-5" style="text-align: center" id="pricing">Pricing</h1>
+      <section id="">
+        
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <div class="row mt-0 mb-0 mr-0 ml-0">
+              <div class="col-4">
+                <img src="pricetag.png" alt="Laundromat Image" class="img-fluid">
+              </div>
+              <div class="col-4">
+                <p id="custom-p"><b>75lb Washer:<br>60lb Washer:<br>55lb Washer:<br>40lb Washer:<br>30lb Washer:<br>20lb Washer:<br>Dryers:<br></b></p>
+              </div>
+              <div class="col-4">
+                <p id="custom-p">$9.50<br>$9.00+<br>$9.00+<br>$7.00<br>$6.00+<br>$4.00+<br>6 mins/$0.25</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="row mt-0 mb-0 mr-0 ml-0">
+              <div class="col-4">
+                <img src="piggybank.png" alt="Laundromat Image" class="img-fluid">
+              </div>
+              <div class="col-8 align-self-center">
+                <p id="custom-p"><b>All machines are coin operated,<br>please bring cash with you.</b></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Q&A Section -->
+      <h1 class="pt-5" style="text-align: center" id="faq">Frequently Asked Questions</h1>
+      <section id="">
+        <div class="row pt-5 pb-5">
+          <div class="col-md-3 pb-3">
+            <div class="card bg-primary text-white">
+              <div class="card-header">
+                <h5 class="card-title">Question 1</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Answer to Question 1.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 pb-3">
+            <div class="card bg-primary text-white">
+              <div class="card-header">
+                <h5 class="card-title">Question 2</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Answer to Question 2.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 pb-3">
+            <div class="card bg-primary text-white">
+              <div class="card-header">
+                <h5 class="card-title">Question 3</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Answer to Question 3.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 pb-3">
+            <div class="card bg-primary text-white">
+              <div class="card-header">
+                <h5 class="card-title">Question 4</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Answer to Question 4.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more cards as needed -->
+        </div>
+      </section>
+
+
+
+
+
+
+      <!--Right padding-->
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
