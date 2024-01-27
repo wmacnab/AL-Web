@@ -51,10 +51,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  /*background-color: #bbe2f1;  Replace with your preferred shade of blue */
 }
 
 .container {
-  /* Add any additional styling for your container if needed */
   background-color: #ffffff;
 }
