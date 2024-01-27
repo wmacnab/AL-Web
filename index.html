@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <!--Return to Top button-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-b1D6mF7/4PrLUEyuNmNDaDeiY1HV4hX8meFBRK/MI4uV1S8z1Cs5EL2z2dp1O4bJ" crossorigin="anonymous">
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
@@ -35,6 +38,27 @@
             window.location.hash = hash;
           });
         }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Return to Top Button
+      var returnBtn = $('#return-to-top');
+  
+      // Show or hide the button based on scroll position
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          returnBtn.fadeIn();
+        } else {
+          returnBtn.fadeOut();
+        }
+      });
+  
+      // Smooth scroll to top
+      returnBtn.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
       });
     });
   </script>
@@ -72,6 +96,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -93,7 +120,7 @@
       <section id="">
         <div class="row">
           <div class="col pl-0 pr-0">
-            <img src="headinglogoshort.jpg" alt="Laundromat Image" class="img-fluid">
+            <img src="headinglogoblackshort.jpg" alt="Laundromat Image" class="img-fluid">
           </div>
         </div>
       </section>
@@ -136,7 +163,7 @@
           <div class="col-md-6 mb-3">
             <h2>About Us</h2>
             <p id="written-section">
-              Discover a laundry experience like no other at Access Laundry. Our laundromat offers a warm welcome, pleasant environment, & modern machines ensuring your laundry receives optimal care. Everyone is welcome & over the years we have met & got to know many local residents & people just passing through. We have welcomed a traveling marching band catching up on the laundry during a concert tour, youth sports teams from across the country in town for tournaments, & people visiting the area from overseas. As a veteran-owned & community-focused business, we proudly support first responders, veterans, and local organizations aiding those in recovery. Whether a local resident or visitor, we look forward to seeing you soon. 
+              Discover a laundry experience like no other at Access Laundry. Our laundromat offers a warm welcome, pleasant environment, & modern machines ensuring your laundry receives optimal care. Everyone is welcome & over the years we have met & got to know many local residents & people just passing through. We have welcomed a traveling marching band catching up on the laundry during a concert tour, youth sports teams from across the country in town for tournaments, & people visiting the area from overseas. As a veteran-owned & community-focused business, we proudly support first responders, veterans, & local organizations aiding those in recovery. Whether a local resident or visitor, we look forward to seeing you soon. 
             
 
             
@@ -157,7 +184,7 @@
           <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
             <h2>Our Machines</h2>
             <p id="written-section">
-              Deliberately old-school, our coin-operated system is reliable & eliminates transaction fees, credit card holds & unused balances on laundry cards.  Our two change machines convert $1-$20 bills to quarters which are used to operate all machines. With six size options, our modern washers have been laid out with you, our customers, in mind. Large washers near the front door, smaller washers at the back, and 24 dryers. Many of our machines offer optional features such as pre-wash, extra rinse & extra high-speed spin, should you need them. From a small load to a king size comforter we have the machine you need in our clean & friendly environment.
+              Deliberately old-school, our coin-operated system is reliable & eliminates transaction fees, credit card holds & unused balances on laundry cards.  Our two change machines convert $1-$20 bills to quarters which are used to operate all machines. With six size options, our modern washers have been laid out with you, our customers, in mind. Large washers near the front door, smaller washers at the back, & 24 dryers. Many of our machines offer optional features such as pre-wash, extra rinse & extra high-speed spin, should you need them. From a small load to a king size comforter we have the machine you need in our clean & friendly environment.
             
 
 
@@ -172,7 +199,7 @@
           <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
             <h2>Amenities</h2>
             <p id="written-section">
-              Our well-lit facility is staffed daily & is equipped with 24/7 security monitoring. Our separate male & female restrooms are cleaned regularly & the latter includes a baby change station. For those who need it we offer name-brand laundry products over the counter and in vending machines, plus a range of laundry bags. Our waiting area includes vending machines with a variety of snacks & drinks.  
+              Our well-lit facility is staffed daily & is equipped with 24/7 security monitoring. Our separate male & female restrooms are cleaned regularly & the latter includes a baby change station. For those who need it we offer name-brand laundry products over the counter & in vending machines, plus a range of laundry bags. Our waiting area includes vending machines with a variety of snacks & drinks.  
             
             
             
@@ -193,7 +220,7 @@
           <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
             <h2>Comforter Care Service</h2>
             <p id="written-section">
-              We offer professional care for your comforters. Simply drop it off during counter hours, and we'll have it expertly cleaned and ready for you the next day. We'll notify you once it's ready.           
+              We offer professional care for your comforters. Simply drop it off during counter hours, & we'll have it expertly cleaned & ready for you the next day. We'll notify you once it's ready.           
 
 
 
@@ -239,7 +266,7 @@
       <!-- Q&A Section -->
       <h1 class="pt-5" style="text-align: center" id="faq">Frequently Asked Questions</h1>
       <section id="">
-        <div class="row pt-5 pb-5">
+        <div class="row pt-5 pb-3">
           <div class="col-md-3 pb-3">
             <div class="card bg-primary text-white">
               <div class="card-header">
@@ -293,6 +320,64 @@
           <!-- Add more cards as needed -->
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <h1 class="pt-5" style="text-align: center" id="contact">Contact Us</h1>
+      <section id="">
+        
+        <div class="row pt-5 pb-5">
+
+          <!--Padding to center-->
+          <div class="col-2"></div>
+
+          <div class="col-md-4">
+            <div class="row mt-0 mb-3 mr-0 ml-0">
+              <div class="col-4">
+                <img src="phone.png" alt="Laundromat Image" class="img-fluid">
+              </div>
+              <div class="col-4 align-self-center">
+                <p id="custom-p" style="text-align: center;"><b>770-933-9894</b></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="row mt-0 mb-3 mr-0 ml-0">
+              <div class="col-4">
+                <img src="message.png" alt="Laundromat Image" class="img-fluid">
+              </div>
+              <div class="col-4 align-self-center">
+                <p id="custom-p" style="text-align: center;"><b>accesslaundry@website.com</b></p>
+              </div>
+            </div>
+
+          <!--Padding to center-->
+          <div class="col-2"></div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- Return to Top Button Column -->
+      <div class="row pb-5">
+        <!--Padding to center-->
+        <div class="col-4"></div>
+
+
+
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="return-to-top">Return to Top</button>
+        </div>
+
+
+
+        <!--Padding to center-->
+        <div class="col-4"></div>
+      </div>
 
 
       <!--Right padding-->
